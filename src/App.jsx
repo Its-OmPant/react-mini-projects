@@ -1,5 +1,7 @@
-import BgChangerApp from "./components/BgChangerApp";
-import CounterApp from "./components/CounterApp";
+import BgChangerApp from "./components/BgChanger/BgChangerApp";
+import Counter from "./components/Counter/Counter";
+import PasswordGenerator from "./components/passwordGenerator/PasswordGenerator";
+
 function App() {
 	return (
 		<div>
@@ -7,7 +9,7 @@ function App() {
 				Counter App
 			</h1>
 			<div className="min-h-screen bg-pink-100 py-20 overflow">
-				<CounterApp />
+				<Counter />
 			</div>
 
 			<h1 className="my-4 text-center text-2xl font-mono uppercase font-bold">
@@ -15,6 +17,13 @@ function App() {
 			</h1>
 			<div className="h-screen bg-pink-100">
 				<BgChangerApp />
+			</div>
+
+			<h1 className="my-4 text-center text-2xl font-mono uppercase font-bold">
+				Password Generator App
+			</h1>
+			<div className="h-screen bg-pink-100">
+				<PasswordGenerator />
 			</div>
 		</div>
 	);
