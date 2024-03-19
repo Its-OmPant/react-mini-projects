@@ -9,7 +9,7 @@ import ProjectContainer from "./components/ProjectContainer.jsx";
 import {
 	Route,
 	RouterProvider,
-	createBrowserRouter,
+	createHashRouter,
 	createRoutesFromElements,
 } from "react-router-dom";
 
@@ -34,7 +34,7 @@ import "./index.css";
 // 	},
 // ]);
 
-const router = createBrowserRouter(
+const router = createHashRouter(
 	createRoutesFromElements(
 		<Route path="/" element={<App />}>
 			<Route path="" element={<ProjectContainer></ProjectContainer>} />
