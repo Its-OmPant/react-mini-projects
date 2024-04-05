@@ -15,25 +15,6 @@ import {
 
 import "./index.css";
 
-// const router = createBrowserRouter([
-// 	{
-// 		path: "/",
-// 		element: <App />,
-// 	},
-// 	{
-// 		path: "counter_app",
-// 		element: <Counter />,
-// 	},
-// 	{
-// 		path: "bg_changer_app",
-// 		element: <BgChangerApp />,
-// 	},
-// 	{
-// 		path: "password_generator_app",
-// 		element: <PasswordGenerator />,
-// 	},
-// ]);
-
 const router = createHashRouter(
 	createRoutesFromElements(
 		<Route path="/" element={<App />}>

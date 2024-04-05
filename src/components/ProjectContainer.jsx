@@ -1,24 +1,21 @@
-import React from "react";
-import Card from "./Card";
+import React, { useState } from "react";
+import Project from "./Project";
 function ProjectContainer() {
 	return (
-		<>
-			<div className="w-full min-h-screen text-center">
-				<h1 className="m-4 text-4xl font-black font-mono text-teal-800">
-					React Mini Projects
-				</h1>
-				<div
-					id="projectContainer"
-					className=" p-4 w-4/5 m-auto my-6 flex justify-around">
-					<Card projectName="Counter App" path="counter_app" />
-					<Card projectName="Bg Changer App" path="bg_changer_app" />
-					<Card
-						projectName="Password Generator App"
-						path="password_generator_app"
-					/>
-				</div>
+		<div className="bg-black/95 w-full h-screen text-white flex flex-col items-center py-4">
+			<h1 className="text-2xl tracking-wider drop-shadow-[0px_2px_10px_var(--tw-shadow-color)]  shadow-blue-700">
+				React Mini Projects
+			</h1>
+			<div id="projects" className="w-[90%] sm:w-3/5 lg:w-1/3 my-4">
+				<Project name="Project 1: Counter App 💣" url="counter_app" />
+				<Project name="Project 2: BG Changer App 🔥" url="bg_changer_app" />
+				<Project
+					name="Project 3: Password Generator App 💻"
+					url="password_generator_app"
+				/>
 			</div>
-		</>
+			<div>made with 💖 by Om Pant</div>
+		</div>
 	);
 }
 
