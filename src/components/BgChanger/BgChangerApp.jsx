@@ -9,12 +9,12 @@ function BgChangerApp() {
 		<div
 			className="w-full h-[100vh] relative"
 			style={{ backgroundColor: bgColor }}>
-			<h1 className="py-6 text-black text-3xl text-center tracking-widest font-outline-2 ">
+			<h1 className=" text-2xl mx-4 py-6 text-black md:text-4xl lg:text-7xl text-center tracking-widest font-outline-2 ">
 				Background Color Changer
 			</h1>
 			<div
-				className="bg-slate-300 flex flex-wrap justify-center p-2  mx-auto
-       absolute bottom-8 left-1/2 -translate-x-1/2 rounded-3xl">
+				className="bg-slate-300 flex flex-wrap justify-center p-2 
+       absolute bottom-12 left-1/2 -translate-x-1/2 rounded-3xl">
 				<BgChangerBtn color="hotpink" onClickHandler={setBgColor} />
 				<BgChangerBtn color="blue" onClickHandler={setBgColor} />
 				<BgChangerBtn color="red" onClickHandler={setBgColor} />

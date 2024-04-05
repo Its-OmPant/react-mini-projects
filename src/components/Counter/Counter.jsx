@@ -13,6 +13,7 @@ function CounterApp() {
 		}
 	};
 	const reset = () => {
+		alert("Value reset to 0.");
 		setCounter(0);
 	};
 

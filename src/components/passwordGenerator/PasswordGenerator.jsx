@@ -46,9 +46,9 @@ function PasswordGenerator() {
 				<h1>Password Generator</h1>
 			</nav>
 
-			<div className="bg-white w-1/3  mx-auto my-6 rounded-lg overflow-hidden flex justify-center shadow-md">
+			<div className="bg-white w-[93%] sm:w-3/5  lg:w-1/3  mx-auto my-6 rounded-lg overflow-hidden sm:flex sm:justify-center shadow-md">
 				<input
-					className="outline-none w-[90%] px-4 py-3 text-lg font-semibold tracking-wide text-slate-800 selection:bg-teal-300 "
+					className="outline-none w-full sm:w-[90%] px-4 py-3 text-md font-semibold tracking-wide text-slate-800 selection:bg-teal-300 "
 					type="text"
 					placeholder="Click Generate to generate Password"
 					value={password}
@@ -57,12 +57,12 @@ function PasswordGenerator() {
 				/>
 				<button
 					onClick={copyPassword}
-					className="bg-gray-700 text-white w-[10%]">
+					className="bg-gray-700 text-white w-full p-2 sm:w-[10%]">
 					<FaCopy className="mx-auto" />
 				</button>
 			</div>
 
-			<div className="bg-white w-1/3  mx-auto my-6 rounded-lg overflow-hidden shadow-md">
+			<div className="bg-white w-[93%] sm:w-3/5 lg:w-1/3  mx-auto my-6 rounded-lg overflow-hidden shadow-md">
 				<div className=" w-full my-2 px-6 py-2 text-center">
 					<h3>Password Length: {length}</h3>
 					<input
@@ -77,7 +77,7 @@ function PasswordGenerator() {
 				</div>
 
 				<div className=" w-full my-2 px-6 py-2 text-center flex justify-between ">
-					<h3 className="text-lg px-4">Use Numbers</h3>
+					<h3 className="text-md sm:text-lg px-4">Use Numbers</h3>
 					<input
 						className="w-6"
 						type="checkbox"
@@ -88,7 +88,7 @@ function PasswordGenerator() {
 					/>
 				</div>
 				<div className=" w-full my-2 px-6 py-2 text-center flex justify-between ">
-					<h3 className="text-lg px-4">Use UpperCase Characters</h3>
+					<h3 className="text-md sm:text-lg px-4">Use UpperCase Characters</h3>
 					<input
 						className="w-6"
 						type="checkbox"
@@ -99,7 +99,7 @@ function PasswordGenerator() {
 					/>
 				</div>
 				<div className=" w-full my-2 px-6 py-2 text-center flex justify-between ">
-					<h3 className="text-lg px-4">Use Special Characters</h3>
+					<h3 className="text-md sm:text-lg px-4">Use Special Characters</h3>
 					<input
 						className="w-6"
 						type="checkbox"
