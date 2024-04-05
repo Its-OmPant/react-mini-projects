@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { NavLink } from "react-router-dom";
 
-function Project({ name, url, repolink }) {
+function Project({ name, desc, url, repolink }) {
 	const [isOpen, setIsOpen] = useState(false);
 	const stopPropagation = (e) => {
 		e.stopPropagation();
@@ -31,19 +31,15 @@ function Project({ name, url, repolink }) {
 				onClick={stopPropagation}
 				className="px-4 pb-2 border-black rounded-md text-black hidden">
 				<div className="w-full h-[1px] bg-gray-800 mb-2"></div>
-				Description : Lorem ipsum dolor sit amet consectetur adipisicing elit.
-				Blanditiis, est.
+				<span className="font-semibold text-red-800">
+					Project Description :
+				</span>{" "}
+				{desc}
 				<div className="my-3">
-					<a
-						href={repolink}
-						target="_blank"
-						className="bg-blue-800 text-sm text-white p-2 rounded-md mr-4 ml-0">
-						Code
-					</a>
 					<NavLink
 						to={url}
 						className="bg-blue-800 text-sm text-white p-2 rounded-md mr-4 ml-0">
-						Deploy
+						View Live
 					</NavLink>
 				</div>
 			</div>
